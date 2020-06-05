@@ -23,13 +23,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</span></a>
+        <a class="nav-link" href="/">Home</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="stats.html">Stats</span></a>
+        <a class="nav-link" href="/">Stats</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="players.html">Players</a>
+        <a class="nav-link" href="/players.html">Players</a>
       </li>
     </ul>
   </div>
@@ -40,56 +40,32 @@
 
 <div class="container">
   <div class="border-bottom border-secondary mb-3">
-    <h4>All games</h4>
+    <h4>Games overview</h4>
+  </div>
+  <div>
+  <canvas id="summary_chart"></canvas>
+</div>
+</div>
+<div class="container">
+  <button class="btn btn-outline-primary active">Buy in</button>
+  <button class="btn btn-outline-primary">Amount</button>
+  <button class="btn btn-outline-primary">Profit</button>
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <button class="btn btn-outline-secondary active">Per game</button>
+  <button class="btn btn-outline-secondary">Cumulative</button>
+</div>
+</div>
+<br>
+
+<div class="container">
+  <div class="border-bottom border-secondary mb-3">
+    <h4>Summary</h4>
   </div>
 </div>
 
-<div id="root" class="container">
+<div id="root" class="container"></div>
 
-<!--
-<div class="card shadow-sm rounded-0">
-	<div class="card-header bg-secondary text-light px-3 py-2 rounded-0"><b>Game #9 (31st May 2020)</b></div>
-	<div class="card-body">
 
-	<table class="table border-bottom">
-		<thead>
-		  <tr>
-		    <th scope="col">#</th>
-		    <th scope="col">Player</th>
-		    <th scope="col">Paid in</th>
-		    <th scope="col">Final chips</th>
-		    <th scope="col">Profit</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr>
-		    <th scope="row">1</th>
-		    <td>Lewis</td>
-		    <td>100</td>
-		    <td>235</td>
-		    <td>+135</td>
-		  </tr>
-		  <tr>
-		    <th scope="row">2</th>
-		    <td>Joyner</td>
-		    <td>100</td>
-		    <td>97</td>
-		    <td>-3</td>
-		  </tr>
-		  <tr>
-		    <th scope="row">3</th>
-		    <td>Lewis</td>
-		    <td>100</td>
-		    <td>235</td>
-		    <td>+135</td>
-		  </tr>
-		</tbody>
-	</table>
-	</div>
-</div>
--->
-
-</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -97,12 +73,19 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
+<script src="js/chartx.js"></script>
 
 <script>
 
 $(document).ready(function() {
+
+  var ctx = document.getElementById('summary_chart').getContext('2d');
+  chart = new Chart(ctx, config);
+
 
   var root = document.getElementById('root')
 
@@ -112,6 +95,12 @@ $(document).ready(function() {
     'amount': 'Amount Remaining',
     'profit': 'Profit'
   }
+
+  game_ids = data.map(function(entry){
+    return entry['game_id']
+  })
+
+  var max_id = Math.max.apply(Math, game_ids)
 
   console.log(max_id)
 
