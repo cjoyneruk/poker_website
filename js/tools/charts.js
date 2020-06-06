@@ -20,29 +20,43 @@ function getColor(array, alpha){
     return 'rgba(' + array[0] + ', ' + array[1] + ', ' + array[2] + ', ' + alpha + ')'
 }
 
-var datasets = []
-for (i=0; i<players.length; i++){
 
-    var player_data = filterData(data, 'player', players[i]);
-    var profit_data = player_data.map(function(x){
-        return x['profit']
-    })
-    datasets.push({
-        label: players[i],
-        data: profit_data,
-        fill: false,
-        backgroundColor: getColor(colors[i]["rgb"], 1),
-        borderColor: getColor(colors[i]["rgb"], 0.6)
-    })
+function getDatasets(data, variable, cumulative){
+    var datasets = []
+    for (var i=0; i<players.length; i++){
 
+        var player_data = data.filter(filterByVariable('player', players[i], true));
+        player_data = player_data.map(extractVariable(variable));
+
+        if (cumulative){
+            player_data = getCumulative(player_data);
+
+        }
+
+        datasets.push({
+            label: players[i],
+            data: player_data,
+            fill: false,
+            backgroundColor: getColor(colors[i]["rgb"], 1),
+            borderColor: getColor(colors[i]["rgb"], 0.6)
+        })
+
+    }
+
+    return datasets
 }
+
+function updateChart(data, variable, cumulative, heading) {
+      chart.data.datasets = getDatasets(data, variable, cumulative);
+      chart.options.title.text = heading
+      chart.update();
+    };
 
 
 var config = {
     type: 'line',
     data: {
         labels: labels,
-        datasets: datasets
     },
     options: {
         responsive: true,
@@ -70,59 +84,10 @@ var config = {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Profit (chips)'
+                    labelString: 'Chips'
                 }
             }]
         },
         spanGaps: true
     }
 };
-
-//var colorNames = Object.keys(window.chartColors);
-//document.getElementById('addDataset').addEventListener('click', function() {
-//    var colorName = colorNames[config.data.datasets.length % colorNames.length];
-//    var newColor = window.chartColors[colorName];
-//    var newDataset = {
-//        label: 'Dataset ' + config.data.datasets.length,
-//        backgroundColor: newColor,
-//        borderColor: newColor,
-//        data: [],
-//        fill: false
-//    };
-//
-//    for (var index = 0; index < config.data.labels.length; ++index) {
-//        newDataset.data.push(randomScalingFactor());
-//    }
-//
-//    config.data.datasets.push(newDataset);
-//    window.myLine.update();
-//});
-
-//document.getElementById('addData').addEventListener('click', function() {
-//    if (config.data.datasets.length > 0) {
-//        var month = MONTHS[config.data.labels.length % MONTHS.length];
-//        config.data.labels.push(month);
-//
-//        config.data.datasets.forEach(function(dataset) {
-//            dataset.data.push(randomScalingFactor());
-//        });
-//
-//        window.myLine.update();
-//    }
-//});
-//
-//document.getElementById('removeDataset').addEventListener('click', function() {
-//    config.data.datasets.splice(0, 1);
-//    window.myLine.update();
-//});
-//
-//document.getElementById('removeData').addEventListener('click', function() {
-//    config.data.labels.splice(-1, 1); // remove the label first
-//
-//    config.data.datasets.forEach(function(dataset) {
-//        dataset.data.pop();
-//    });
-//
-//    window.myLine.update();
-//});
-

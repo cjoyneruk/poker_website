@@ -1,17 +1,11 @@
-game_ids = data.map(function(entry){
-    return entry['game_id']
-})
-
-var max_id = Math.max.apply(Math, game_ids)
-
-function sortData(data, variable){
-	data.sort(function(a, b){return b[variable]- a[variable]});
-}
-
-// - Filter by variable
-function filterData(data, variable, value){
-	newdata = data.filter(function (x) {return x[variable]==value})
-	return newdata
+function getClass(value){
+    if (value>0){
+        return ['text-success']
+    } else if (value<0) {
+        return ['text-danger']
+    } else {
+        return []
+    }
 }
 
 function createElement(type, attrs, classNames, context, parent) {
@@ -53,7 +47,8 @@ function createCardBody(attrs, context, card){
     return createElement('div', attrs, ['card-body'], context, card)
 }
 
-function createTable(headings, data, parent){
+function createSummaryTable(headings, data, parent){
+
     var table = createElement('table', {}, ['table', 'border-bottom'], null, parent);
 
     var thead = createElement('thead', {}, [], null, table);
@@ -72,10 +67,47 @@ function createTable(headings, data, parent){
         var entry = data[i];
         var th = createElement('th', {}, [], (i+1).toString(), tr);
 
-        for (key of Object.keys(headings)){
-            var td = createElement('td', {}, [], entry[key].toString(), tr);
+        for (let key of Object.keys(headings)){
+            var classList = [];
+            var value = entry[key]
+            if (key=='money'){
+                classList = getClass(value);
+                if (value<0) {
+                    value = '-£' + Math.abs(value).toFixed(2)
+                } else {
+                    value = '£' + value.toFixed(2)
+                }
+            } else if (key=='profit'){
+                classList = getClass(value);
+            }
+            var td = createElement('td', {}, classList, value.toString(), tr);
         }
     }
 
     return table
+}
+
+function createDisplayDiv(headings, title, data, root_id, card_id, hidden){
+  var card_attrs = {};
+  var card_header_attrs = {};
+  var card_body_attrs = {};
+
+  if (card_id) {
+      card_attrs['id'] = 'card_' + card_id;
+      card_header_attrs['id'] = card_id;
+      card_body_attrs['id'] = 'card_body_' + card_id;
+  }
+
+  if (hidden) {
+    card_header_attrs['onclick'] = "toggleCardBody('" + card_id + "')";
+    card_body_attrs['style'] = 'display: none';
+  }
+
+  var root = document.getElementById(root_id);
+  var card = createCard(card_attrs, root);
+  var card_header = createCardHeader(card_header_attrs, title, card);
+  var card_body = createCardBody(card_body_attrs, null, card);
+  var table = createSummaryTable(headings, data, card_body);
+  var br = createBr(root);
+
 }

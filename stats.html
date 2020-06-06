@@ -22,14 +22,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/">Stats</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/players.html">Players</a>
+        <a class="nav-link" href="stats.html">Stats</a>
       </li>
     </ul>
   </div>
@@ -47,27 +44,36 @@
 </div>
 </div>
 <div class="container">
-  <button class="btn btn-outline-primary active">Buy in</button>
-  <button class="btn btn-outline-primary">Amount</button>
-  <button class="btn btn-outline-primary">Profit</button>
+  <button id="buy_in" class="btn btn-outline-primary btn-variable" onclick="changeVariable('buy_in')">Buy in</button>
+  <button id="amount" class="btn btn-outline-primary btn-variable" onclick="changeVariable('amount')">Amount</button>
+  <button id="profit" class="btn btn-outline-primary btn-variable active" onclick="changeVariable('profit')">Profit</button>
   <div class="btn-group" role="group" aria-label="Basic example">
-  <button class="btn btn-outline-secondary active">Per game</button>
-  <button class="btn btn-outline-secondary">Cumulative</button>
+  <button id="per_game" class="btn btn-outline-secondary active" onclick="changeCumulative(false)">Per game</button>
+  <button id="cumulative" class="btn btn-outline-secondary" onclick="changeCumulative(true)">Cumulative</button>
 </div>
 </div>
 <br>
 
 <div class="container">
   <div class="border-bottom border-secondary mb-3">
-    <h4>Summary</h4>
+    <h4>Total</h4>
   </div>
 </div>
 
-<div id="root" class="container"></div>
+<div id="total_root" class="container"></div>
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<div class="container">
+  <div class="border-bottom border-secondary mb-3">
+    <h4>Phases</h4>
+  </div>
+</div>
+
+<div id="phases_root" class="container"></div>
+
+<div class="container">
+  <hr class="bg-secondary">
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -75,48 +81,82 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-<script src="js/data.js"></script>
-<script src="js/main.js"></script>
-<script src="js/chartx.js"></script>
+<script src="js/data/complete.js"></script>
+<script src="js/data/dates.js"></script>
+<script src="js/data/summary.js"></script>
+
+<script src="js/tools/data.js"></script>
+<script src="js/tools/charts.js"></script>
+<script src="js/tools/elements.js"></script>
 
 <script>
+
+var current_variable = 'profit';
+var current_cumulative = false;
+
+var headings = {
+  'player': 'Player',
+  'buy_in': 'Buy in',
+  'amount': 'Amount Remaining',
+  'profit': 'Profit (Chips)',
+  'money': 'Profit (Money)'
+}
+
+
+function changeVariable(variable){
+
+  // update buttons
+  btn_list = document.getElementsByClassName('btn-variable');
+
+  for (i=0; i<btn_list.length; i++){
+    if (btn_list[i].id == variable){
+      btn_list[i].classList.add('active');
+    } else {
+      btn_list[i].classList.remove('active');
+    }
+  }
+
+  current_variable = variable;
+
+  updateChart(complete_data, current_variable, current_cumulative, headings[current_variable]);
+
+}
+
+function changeCumulative(cumulative){
+
+  btn_a = document.getElementById('per_game');
+  btn_b = document.getElementById('cumulative');
+
+  if (cumulative) {
+    btn_a.classList.remove('active');
+    btn_b.classList.add('active');
+  } else {
+    btn_a.classList.add('active');
+    btn_b.classList.remove('active');
+  }
+
+  current_cumulative = cumulative;
+
+  updateChart(complete_data, current_variable, current_cumulative, headings[current_variable]);
+
+}
 
 $(document).ready(function() {
 
   var ctx = document.getElementById('summary_chart').getContext('2d');
+  config.data.datasets = getDatasets(complete_data, 'profit', false)
+
   chart = new Chart(ctx, config);
 
+  var total_data = summary_data.filter(filterByVariable('type', 'total', true));
+  createDisplayDiv(headings, total_data[0]['title'], total_data[0]['data'], 'total_root', null, false);
 
-  var root = document.getElementById('root')
+  var phases_data = summary_data.filter(filterByVariable('type', 'phase', true));
 
-  var headings = {
-    'player': 'Player',
-    'buy_in': 'Buy in',
-    'amount': 'Amount Remaining',
-    'profit': 'Profit'
-  }
+  for (var j=0; j<phases_data.length; j++){
+     k = phases_data.length - j - 1;
 
-  game_ids = data.map(function(entry){
-    return entry['game_id']
-  })
-
-  var max_id = Math.max.apply(Math, game_ids)
-
-  console.log(max_id)
-
-  for (j=0; j<max_id; j++) {
-
-    var k = max_id - j - 1;
-    console.log(k)
-    var game_data = filterData(data, 'game_id', k+1);
-
-    sortData(game_data, 'profit')
-
-    var card = createCard({}, root);
-    var card_header = createCardHeader({}, `Game ${(k+1)} (${dates[k]['date']})`, card);
-    var card_body = createCardBody({}, null, card);
-    var table = createTable(headings, game_data, card_body);
-    var br = createBr(root);
+     createDisplayDiv(headings, phases_data[k]['title'], phases_data[k]['data'], 'phases_root', null, false);
   }
 
 

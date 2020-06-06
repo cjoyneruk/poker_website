@@ -23,13 +23,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</span></a>
+        <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="stats.html">Stats</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="players.html">Players</a>
+        <a class="nav-link" href="stats.html">Stats</a>
       </li>
     </ul>
   </div>
@@ -40,97 +37,71 @@
 
 <div class="container">
   <div class="border-bottom border-secondary mb-3">
-    <h4>All games</h4>
+    <h4>Last game</h4>
   </div>
 </div>
 
-<div id="root" class="container">
+<div id="last_game_root" class="container"></div>
 
-<!--
-<div class="card shadow-sm rounded-0">
-	<div class="card-header bg-secondary text-light px-3 py-2 rounded-0"><b>Game #9 (31st May 2020)</b></div>
-	<div class="card-body">
-
-	<table class="table border-bottom">
-		<thead>
-		  <tr>
-		    <th scope="col">#</th>
-		    <th scope="col">Player</th>
-		    <th scope="col">Paid in</th>
-		    <th scope="col">Final chips</th>
-		    <th scope="col">Profit</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr>
-		    <th scope="row">1</th>
-		    <td>Lewis</td>
-		    <td>100</td>
-		    <td>235</td>
-		    <td>+135</td>
-		  </tr>
-		  <tr>
-		    <th scope="row">2</th>
-		    <td>Joyner</td>
-		    <td>100</td>
-		    <td>97</td>
-		    <td>-3</td>
-		  </tr>
-		  <tr>
-		    <th scope="row">3</th>
-		    <td>Lewis</td>
-		    <td>100</td>
-		    <td>235</td>
-		    <td>+135</td>
-		  </tr>
-		</tbody>
-	</table>
-	</div>
+<div class="container">
+  <div class="border-bottom border-secondary mb-3">
+    <h4>Previous games</h4>
+  </div>
 </div>
--->
 
+<div id="historic_game_root" class="container"></div>
+
+<div class="container">
+  <hr class="bg-secondary">
 </div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-<script src="js/data.js"></script>
-<script src="js/main.js"></script>
+<script src="js/data/complete.js"></script>
+<script src="js/data/dates.js"></script>
+<script src="js/data/summary.js"></script>
+
+<script src="js/tools/data.js"></script>
+<script src="js/tools/elements.js"></script>
 
 <script>
+
+
+var headings = {
+  'player': 'Player',
+  'buy_in': 'Buy in',
+  'amount': 'Amount Remaining',
+  'profit': 'Profit'
+}
+
+function getGameData(init_data, game_id){
+  var data = init_data.filter(filterByVariable('game_id', game_id, true));
+  data = data.filter(filterByVariable('buy_in', null, false));
+  data = data.sort(sortByVariable('profit', false));
+  return data
+}
+
+function toggleCardBody(card_id){
+  $('#card_body_' + card_id).toggle();
+}
+
 
 $(document).ready(function() {
 
   var root = document.getElementById('root')
 
-  var headings = {
-    'player': 'Player',
-    'buy_in': 'Buy in',
-    'amount': 'Amount Remaining',
-    'profit': 'Profit'
-  }
-
   console.log(max_id)
 
-  for (j=0; j<max_id; j++) {
+  var data = getGameData(complete_data, 10);
+  createDisplayDiv(headings, 'Game 10', data, 'last_game_root', 'last', false);
 
-    var k = max_id - j - 1;
-    console.log(k)
-    var game_data = filterData(data, 'game_id', k+1);
-
-    sortData(game_data, 'profit')
-
-    var card = createCard({}, root);
-    var card_header = createCardHeader({}, `Game ${(k+1)} (${dates[k]['date']})`, card);
-    var card_body = createCardBody({}, null, card);
-    var table = createTable(headings, game_data, card_body);
-    var br = createBr(root);
+  for (var i=1;i<max_id;i++){
+    var k = max_id - i;
+    data = getGameData(complete_data, k);
+    createDisplayDiv(headings, 'Game ' + k, data, 'historic_game_root', 'idx_' + k, true);
   }
-
-
 })
 
 </script>
