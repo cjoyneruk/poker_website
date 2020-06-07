@@ -94,8 +94,8 @@ $(document).ready(function() {
 
   console.log(max_id)
 
-  var data = getGameData(complete_data, 10);
-  createDisplayDiv(headings, 'Game 10', data, 'last_game_root', 'last', false);
+  var data = getGameData(complete_data, max_id);
+  createDisplayDiv(headings, 'Game ' + max_id, data, 'last_game_root', 'last', false);
 
   for (var i=1;i<max_id;i++){
     var k = max_id - i;

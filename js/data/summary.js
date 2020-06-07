@@ -5,31 +5,31 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 1300,
-        "amount": 1832,
-        "profit": 532,
-        "money": 26.6
-      },
-      {
-        "player": "Kieran",
-        "buy_in": 1600,
-        "amount": 1742,
-        "profit": 142,
-        "money": 7.1
+        "buy_in": 1400,
+        "amount": 2171,
+        "profit": 771,
+        "money": 38.55
       },
       {
         "player": "Andy B",
-        "buy_in": 1250,
-        "amount": 1383,
-        "profit": 133,
-        "money": 6.65
+        "buy_in": 1350,
+        "amount": 1473,
+        "profit": 123,
+        "money": 6.15
+      },
+      {
+        "player": "Kieran",
+        "buy_in": 1800,
+        "amount": 1777,
+        "profit": -23,
+        "money": -1.15
       },
       {
         "player": "IanB",
-        "buy_in": 600,
-        "amount": 525,
-        "profit": -75,
-        "money": -3.75
+        "buy_in": 700,
+        "amount": 622,
+        "profit": -78,
+        "money": -3.9
       },
       {
         "player": "Amanda",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 1800,
-        "amount": 1165,
-        "profit": -635,
-        "money": -31.75
+        "buy_in": 1900,
+        "amount": 1204,
+        "profit": -696,
+        "money": -34.8
       }
     ]
   },
@@ -138,42 +138,42 @@ var summary_data = [
   },
   {
     "type": "phase",
-    "title": "Phase 3: Game 9 - Game 10",
+    "title": "Phase 3: Game 9 - Game 11",
     "data": [
       {
-        "player": "Andy B",
-        "buy_in": 200,
-        "amount": 312,
-        "profit": 112,
-        "money": 5.6
+        "player": "Joyner",
+        "buy_in": 300,
+        "amount": 616,
+        "profit": 316,
+        "money": 15.8
       },
       {
-        "player": "Joyner",
-        "buy_in": 200,
-        "amount": 277,
-        "profit": 77,
-        "money": 3.85
+        "player": "Andy B",
+        "buy_in": 300,
+        "amount": 402,
+        "profit": 102,
+        "money": 5.1
       },
       {
         "player": "Lewis",
-        "buy_in": 400,
-        "amount": 394,
-        "profit": -6,
-        "money": -0.3
-      },
-      {
-        "player": "Kieran",
-        "buy_in": 300,
-        "amount": 217,
-        "profit": -83,
-        "money": -4.15
+        "buy_in": 500,
+        "amount": 433,
+        "profit": -67,
+        "money": -3.35
       },
       {
         "player": "IanB",
-        "buy_in": 100,
-        "amount": 0,
-        "profit": -100,
-        "money": -5.0
+        "buy_in": 200,
+        "amount": 97,
+        "profit": -103,
+        "money": -5.15
+      },
+      {
+        "player": "Kieran",
+        "buy_in": 500,
+        "amount": 252,
+        "profit": -248,
+        "money": -12.4
       }
     ]
   }
