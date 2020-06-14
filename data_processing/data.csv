@@ -53,5 +53,5 @@ game_id,player,buy_in,amount,profit
 11,IanB,100,97,-3
 12,Lewis,100,300,200
 12,Joyner,100,111,11
-12,Kieran,100,-11,-111
-12,Andy B,200,100,-100
+12,Andy B,100,-11,-111
+12,Kieran,200,100,-100
