@@ -5,24 +5,17 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 1400,
-        "amount": 2171,
-        "profit": 771,
-        "money": 38.55
+        "buy_in": 1500,
+        "amount": 2282,
+        "profit": 782,
+        "money": 39.1
       },
       {
         "player": "Andy B",
-        "buy_in": 1350,
-        "amount": 1473,
-        "profit": 123,
-        "money": 6.15
-      },
-      {
-        "player": "Kieran",
-        "buy_in": 1800,
-        "amount": 1777,
-        "profit": -23,
-        "money": -1.15
+        "buy_in": 1550,
+        "amount": 1573,
+        "profit": 23,
+        "money": 1.15
       },
       {
         "player": "IanB",
@@ -39,11 +32,18 @@ var summary_data = [
         "money": -5.0
       },
       {
-        "player": "Lewis",
+        "player": "Kieran",
         "buy_in": 1900,
-        "amount": 1204,
-        "profit": -696,
-        "money": -34.8
+        "amount": 1766,
+        "profit": -134,
+        "money": -6.7
+      },
+      {
+        "player": "Lewis",
+        "buy_in": 2000,
+        "amount": 1504,
+        "profit": -496,
+        "money": -24.8
       }
     ]
   },
@@ -138,28 +138,28 @@ var summary_data = [
   },
   {
     "type": "phase",
-    "title": "Phase 3: Game 9 - Game 11",
+    "title": "Phase 3: Game 9 - Game 12",
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 300,
-        "amount": 616,
-        "profit": 316,
-        "money": 15.8
-      },
-      {
-        "player": "Andy B",
-        "buy_in": 300,
-        "amount": 402,
-        "profit": 102,
-        "money": 5.1
+        "buy_in": 400,
+        "amount": 727,
+        "profit": 327,
+        "money": 16.35
       },
       {
         "player": "Lewis",
+        "buy_in": 600,
+        "amount": 733,
+        "profit": 133,
+        "money": 6.65
+      },
+      {
+        "player": "Andy B",
         "buy_in": 500,
-        "amount": 433,
-        "profit": -67,
-        "money": -3.35
+        "amount": 502,
+        "profit": 2,
+        "money": 0.1
       },
       {
         "player": "IanB",
@@ -170,11 +170,16 @@ var summary_data = [
       },
       {
         "player": "Kieran",
-        "buy_in": 500,
-        "amount": 252,
-        "profit": -248,
-        "money": -12.4
+        "buy_in": 600,
+        "amount": 241,
+        "profit": -359,
+        "money": -17.95
       }
     ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 4: Game 13 - Game 12",
+    "data": []
   }
 ]
