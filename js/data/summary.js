@@ -12,8 +12,8 @@ var summary_data = [
       },
       {
         "player": "Andy B",
-        "buy_in": 1450,
-        "amount": 1462,
+        "buy_in": 1550,
+        "amount": 1562,
         "profit": 12,
         "money": 0.6
       },
@@ -33,8 +33,8 @@ var summary_data = [
       },
       {
         "player": "Kieran",
-        "buy_in": 2000,
-        "amount": 1877,
+        "buy_in": 1900,
+        "amount": 1777,
         "profit": -123,
         "money": -6.15
       },
@@ -156,8 +156,8 @@ var summary_data = [
       },
       {
         "player": "Andy B",
-        "buy_in": 400,
-        "amount": 391,
+        "buy_in": 500,
+        "amount": 491,
         "profit": -9,
         "money": -0.45
       },
@@ -170,8 +170,8 @@ var summary_data = [
       },
       {
         "player": "Kieran",
-        "buy_in": 700,
-        "amount": 352,
+        "buy_in": 600,
+        "amount": 252,
         "profit": -348,
         "money": -17.4
       }

@@ -471,15 +471,15 @@ var complete_data = [
   {
     "game_id": 12,
     "player": "Andy B",
-    "buy_in": 100.0,
-    "amount": -11.0,
+    "buy_in": 200.0,
+    "amount": 89.0,
     "profit": -111.0
   },
   {
     "game_id": 12,
     "player": "Kieran",
-    "buy_in": 200.0,
-    "amount": 100.0,
+    "buy_in": 100.0,
+    "amount": 0.0,
     "profit": -100.0
   },
   {
