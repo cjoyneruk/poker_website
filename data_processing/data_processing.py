@@ -54,16 +54,16 @@ summary_data = [{
 	'data': df_total.to_dict(orient='records')
 }]
 
-a = max(games) // 4 + 1
-b = max(games) % 4
+a = (max(games) - 1) // 4 + 1 # no. of phases
+b = max(games) % 4 # no. of games
 
 for i in range(0, a):
-
-	if i < (a-1):
-		df_summary = create_summary(df, range(i * 4+1, (i + 1) * 4+1))
+	print(i)
+	if b == 0:
+		df_summary = create_summary(df, range(4*i + 1, (i + 1) * 4+1))
 		title = f'Phase {i+1}: Game {i * 4+1} - Game {(i + 1) * 4}'
 	else:
-		df_summary = create_summary(df, range(i * 4+1, 4*i + b + 1))
+		df_summary = create_summary(df, range(4*i + 1, 4*i + b + 1))
 		title = f'Phase {i+1}: Game {i * 4 + 1} - Game {4*i + b}'
 
 	summary_data.append({

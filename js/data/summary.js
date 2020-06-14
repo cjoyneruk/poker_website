@@ -176,10 +176,5 @@ var summary_data = [
         "money": -17.4
       }
     ]
-  },
-  {
-    "type": "phase",
-    "title": "Phase 4: Game 13 - Game 12",
-    "data": []
   }
 ]
