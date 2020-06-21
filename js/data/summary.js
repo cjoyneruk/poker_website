@@ -5,17 +5,17 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 1500,
-        "amount": 2282,
-        "profit": 782,
-        "money": 39.1
+        "buy_in": 1600,
+        "amount": 2504,
+        "profit": 904,
+        "money": 45.2
       },
       {
         "player": "Andy B",
-        "buy_in": 1550,
-        "amount": 1562,
-        "profit": 12,
-        "money": 0.6
+        "buy_in": 1750,
+        "amount": 1700,
+        "profit": -50,
+        "money": -2.5
       },
       {
         "player": "IanB",
@@ -33,17 +33,17 @@ var summary_data = [
       },
       {
         "player": "Kieran",
-        "buy_in": 1900,
-        "amount": 1777,
-        "profit": -123,
-        "money": -6.15
+        "buy_in": 2000,
+        "amount": 1864,
+        "profit": -136,
+        "money": -6.8
       },
       {
         "player": "Lewis",
-        "buy_in": 2000,
-        "amount": 1504,
-        "profit": -496,
-        "money": -24.8
+        "buy_in": 2100,
+        "amount": 1557,
+        "profit": -543,
+        "money": -27.15
       }
     ]
   },
@@ -174,6 +174,40 @@ var summary_data = [
         "amount": 252,
         "profit": -348,
         "money": -17.4
+      }
+    ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 4: Game 13 - Game 16",
+    "data": [
+      {
+        "player": "Joyner",
+        "buy_in": 100,
+        "amount": 222,
+        "profit": 122,
+        "money": 6.1
+      },
+      {
+        "player": "Kieran",
+        "buy_in": 100,
+        "amount": 87,
+        "profit": -13,
+        "money": -0.65
+      },
+      {
+        "player": "Lewis",
+        "buy_in": 100,
+        "amount": 53,
+        "profit": -47,
+        "money": -2.35
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 200,
+        "amount": 138,
+        "profit": -62,
+        "money": -3.1
       }
     ]
   }
