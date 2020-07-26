@@ -11,13 +11,6 @@ var summary_data = [
         "money": 48.2
       },
       {
-        "player": "IanB",
-        "buy_in": 700,
-        "amount": 622,
-        "profit": -78,
-        "money": -3.9
-      },
-      {
         "player": "Amanda",
         "buy_in": 100,
         "amount": 0,
@@ -26,24 +19,31 @@ var summary_data = [
       },
       {
         "player": "Kieran",
-        "buy_in": 2100,
-        "amount": 1974,
-        "profit": -126,
-        "money": -6.3
+        "buy_in": 2200,
+        "amount": 2078,
+        "profit": -122,
+        "money": -6.1
       },
       {
         "player": "Andy B",
-        "buy_in": 1950,
-        "amount": 1776,
-        "profit": -174,
-        "money": -8.7
+        "buy_in": 2050,
+        "amount": 1893,
+        "profit": -157,
+        "money": -7.85
+      },
+      {
+        "player": "IanB",
+        "buy_in": 800,
+        "amount": 622,
+        "profit": -178,
+        "money": -8.9
       },
       {
         "player": "Lewis",
-        "buy_in": 2200,
-        "amount": 1711,
-        "profit": -489,
-        "money": -24.45
+        "buy_in": 2300,
+        "amount": 1890,
+        "profit": -410,
+        "money": -20.5
       }
     ]
   },
@@ -190,24 +190,31 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 200,
-        "amount": 207,
-        "profit": 7,
-        "money": 0.35
+        "buy_in": 300,
+        "amount": 386,
+        "profit": 86,
+        "money": 4.3
       },
       {
         "player": "Kieran",
-        "buy_in": 200,
-        "amount": 197,
-        "profit": -3,
-        "money": -0.15
+        "buy_in": 300,
+        "amount": 301,
+        "profit": 1,
+        "money": 0.05
+      },
+      {
+        "player": "IanB",
+        "buy_in": 100,
+        "amount": 0,
+        "profit": -100,
+        "money": -5.0
       },
       {
         "player": "Andy B",
-        "buy_in": 400,
-        "amount": 214,
-        "profit": -186,
-        "money": -9.3
+        "buy_in": 500,
+        "amount": 331,
+        "profit": -169,
+        "money": -8.45
       }
     ]
   }

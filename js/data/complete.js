@@ -586,5 +586,47 @@ var complete_data = [
     "buy_in": null,
     "amount": null,
     "profit": null
+  },
+  {
+    "game_id": 15,
+    "player": "Joyner",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 15,
+    "player": "Andy B",
+    "buy_in": 100.0,
+    "amount": 117.0,
+    "profit": 17.0
+  },
+  {
+    "game_id": 15,
+    "player": "Kieran",
+    "buy_in": 100.0,
+    "amount": 104.0,
+    "profit": 4.0
+  },
+  {
+    "game_id": 15,
+    "player": "IanB",
+    "buy_in": 100.0,
+    "amount": 0.0,
+    "profit": -100.0
+  },
+  {
+    "game_id": 15,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 179.0,
+    "profit": 79.0
+  },
+  {
+    "game_id": 15,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
   }
 ]
