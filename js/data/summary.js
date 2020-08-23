@@ -5,10 +5,24 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 1700,
-        "amount": 2664,
-        "profit": 964,
-        "money": 48.2
+        "buy_in": 1900,
+        "amount": 2735,
+        "profit": 835,
+        "money": 41.75
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 2250,
+        "amount": 2223,
+        "profit": -27,
+        "money": -1.35
+      },
+      {
+        "player": "Kieran",
+        "buy_in": 2400,
+        "amount": 2368,
+        "profit": -32,
+        "money": -1.6
       },
       {
         "player": "Amanda",
@@ -16,20 +30,6 @@ var summary_data = [
         "amount": 0,
         "profit": -100,
         "money": -5.0
-      },
-      {
-        "player": "Kieran",
-        "buy_in": 2200,
-        "amount": 2078,
-        "profit": -122,
-        "money": -6.1
-      },
-      {
-        "player": "Andy B",
-        "buy_in": 2050,
-        "amount": 1893,
-        "profit": -157,
-        "money": -7.85
       },
       {
         "player": "IanB",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 2300,
-        "amount": 1890,
-        "profit": -410,
-        "money": -20.5
+        "buy_in": 2500,
+        "amount": 2199,
+        "profit": -301,
+        "money": -15.05
       }
     ]
   },
@@ -190,17 +190,17 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 300,
-        "amount": 386,
-        "profit": 86,
-        "money": 4.3
+        "buy_in": 400,
+        "amount": 495,
+        "profit": 95,
+        "money": 4.75
       },
       {
         "player": "Kieran",
-        "buy_in": 300,
-        "amount": 301,
-        "profit": 1,
-        "money": 0.05
+        "buy_in": 400,
+        "amount": 378,
+        "profit": -22,
+        "money": -1.1
       },
       {
         "player": "IanB",
@@ -211,10 +211,44 @@ var summary_data = [
       },
       {
         "player": "Andy B",
-        "buy_in": 500,
-        "amount": 331,
-        "profit": -169,
-        "money": -8.45
+        "buy_in": 600,
+        "amount": 445,
+        "profit": -155,
+        "money": -7.75
+      }
+    ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 5: Game 17 - Game 20",
+    "data": [
+      {
+        "player": "Andy B",
+        "buy_in": 100,
+        "amount": 216,
+        "profit": 116,
+        "money": 5.8
+      },
+      {
+        "player": "Kieran",
+        "buy_in": 100,
+        "amount": 213,
+        "profit": 113,
+        "money": 5.65
+      },
+      {
+        "player": "Lewis",
+        "buy_in": 100,
+        "amount": 200,
+        "profit": 100,
+        "money": 5.0
+      },
+      {
+        "player": "Joyner",
+        "buy_in": 200,
+        "amount": 71,
+        "profit": -129,
+        "money": -6.45
       }
     ]
   }
