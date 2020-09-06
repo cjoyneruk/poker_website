@@ -73,4 +73,7 @@ game_id,player,buy_in,amount,profit
 17,Andy B,100,216,116
 17,Kieran,100,213,113
 17,Joyner,200,71,-129
-17,Lewis,100,200,100
+17,Lewis,100,0,-100
+18,Joyner,100,176,76
+18,Lewis,100,115,15
+18,Andy B,200,109,-91

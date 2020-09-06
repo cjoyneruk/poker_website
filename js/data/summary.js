@@ -5,17 +5,10 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 1900,
-        "amount": 2735,
-        "profit": 835,
-        "money": 41.75
-      },
-      {
-        "player": "Andy B",
-        "buy_in": 2250,
-        "amount": 2223,
-        "profit": -27,
-        "money": -1.35
+        "buy_in": 2000,
+        "amount": 2911,
+        "profit": 911,
+        "money": 45.55
       },
       {
         "player": "Kieran",
@@ -32,6 +25,13 @@ var summary_data = [
         "money": -5.0
       },
       {
+        "player": "Andy B",
+        "buy_in": 2450,
+        "amount": 2332,
+        "profit": -118,
+        "money": -5.9
+      },
+      {
         "player": "IanB",
         "buy_in": 800,
         "amount": 622,
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 2500,
-        "amount": 2199,
-        "profit": -301,
-        "money": -15.05
+        "buy_in": 2600,
+        "amount": 2114,
+        "profit": -486,
+        "money": -24.3
       }
     ]
   },
@@ -223,13 +223,6 @@ var summary_data = [
     "title": "Phase 5: Game 17 - Game 20",
     "data": [
       {
-        "player": "Andy B",
-        "buy_in": 100,
-        "amount": 216,
-        "profit": 116,
-        "money": 5.8
-      },
-      {
         "player": "Kieran",
         "buy_in": 100,
         "amount": 213,
@@ -237,18 +230,25 @@ var summary_data = [
         "money": 5.65
       },
       {
-        "player": "Lewis",
-        "buy_in": 100,
-        "amount": 200,
-        "profit": 100,
-        "money": 5.0
+        "player": "Andy B",
+        "buy_in": 300,
+        "amount": 325,
+        "profit": 25,
+        "money": 1.25
       },
       {
         "player": "Joyner",
+        "buy_in": 300,
+        "amount": 247,
+        "profit": -53,
+        "money": -2.65
+      },
+      {
+        "player": "Lewis",
         "buy_in": 200,
-        "amount": 71,
-        "profit": -129,
-        "money": -6.45
+        "amount": 115,
+        "profit": -85,
+        "money": -4.25
       }
     ]
   }
