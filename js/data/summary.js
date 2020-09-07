@@ -5,17 +5,17 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 2000,
-        "amount": 2911,
-        "profit": 911,
-        "money": 45.55
+        "buy_in": 2100,
+        "amount": 3087,
+        "profit": 987,
+        "money": 49.35
       },
       {
         "player": "Kieran",
-        "buy_in": 2400,
-        "amount": 2368,
-        "profit": -32,
-        "money": -1.6
+        "buy_in": 2500,
+        "amount": 2518,
+        "profit": 18,
+        "money": 0.9
       },
       {
         "player": "Amanda",
@@ -26,10 +26,10 @@ var summary_data = [
       },
       {
         "player": "Andy B",
-        "buy_in": 2450,
-        "amount": 2332,
-        "profit": -118,
-        "money": -5.9
+        "buy_in": 2550,
+        "amount": 2448,
+        "profit": -102,
+        "money": -5.1
       },
       {
         "player": "IanB",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 2600,
-        "amount": 2114,
-        "profit": -486,
-        "money": -24.3
+        "buy_in": 2800,
+        "amount": 2172,
+        "profit": -628,
+        "money": -31.4
       }
     ]
   },
@@ -224,31 +224,31 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 100,
-        "amount": 213,
-        "profit": 113,
-        "money": 5.65
+        "buy_in": 200,
+        "amount": 363,
+        "profit": 163,
+        "money": 8.15
       },
       {
         "player": "Andy B",
-        "buy_in": 300,
-        "amount": 325,
-        "profit": 25,
-        "money": 1.25
+        "buy_in": 400,
+        "amount": 441,
+        "profit": 41,
+        "money": 2.05
       },
       {
         "player": "Joyner",
-        "buy_in": 300,
-        "amount": 247,
-        "profit": -53,
-        "money": -2.65
+        "buy_in": 400,
+        "amount": 423,
+        "profit": 23,
+        "money": 1.15
       },
       {
         "player": "Lewis",
-        "buy_in": 200,
-        "amount": 115,
-        "profit": -85,
-        "money": -4.25
+        "buy_in": 400,
+        "amount": 173,
+        "profit": -227,
+        "money": -11.35
       }
     ]
   }
