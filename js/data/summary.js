@@ -5,17 +5,24 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 2100,
+        "buy_in": 2200,
         "amount": 3087,
-        "profit": 987,
-        "money": 49.35
+        "profit": 887,
+        "money": 44.35
       },
       {
         "player": "Kieran",
-        "buy_in": 2500,
-        "amount": 2518,
-        "profit": 18,
-        "money": 0.9
+        "buy_in": 2700,
+        "amount": 2795,
+        "profit": 95,
+        "money": 4.75
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 2750,
+        "amount": 2662,
+        "profit": -88,
+        "money": -4.4
       },
       {
         "player": "Amanda",
@@ -23,13 +30,6 @@ var summary_data = [
         "amount": 0,
         "profit": -100,
         "money": -5.0
-      },
-      {
-        "player": "Andy B",
-        "buy_in": 2550,
-        "amount": 2448,
-        "profit": -102,
-        "money": -5.1
       },
       {
         "player": "IanB",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 2800,
-        "amount": 2172,
-        "profit": -628,
-        "money": -31.4
+        "buy_in": 3000,
+        "amount": 2381,
+        "profit": -619,
+        "money": -30.95
       }
     ]
   },
@@ -224,31 +224,58 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 200,
-        "amount": 363,
-        "profit": 163,
-        "money": 8.15
+        "buy_in": 300,
+        "amount": 520,
+        "profit": 220,
+        "money": 11.0
       },
       {
         "player": "Andy B",
-        "buy_in": 400,
-        "amount": 441,
-        "profit": 41,
-        "money": 2.05
+        "buy_in": 500,
+        "amount": 559,
+        "profit": 59,
+        "money": 2.95
       },
       {
         "player": "Joyner",
-        "buy_in": 400,
+        "buy_in": 500,
         "amount": 423,
-        "profit": 23,
-        "money": 1.15
+        "profit": -77,
+        "money": -3.85
       },
       {
         "player": "Lewis",
-        "buy_in": 400,
-        "amount": 173,
-        "profit": -227,
-        "money": -11.35
+        "buy_in": 500,
+        "amount": 298,
+        "profit": -202,
+        "money": -10.1
+      }
+    ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 6: Game 21 - Game 24",
+    "data": [
+      {
+        "player": "Kieran",
+        "buy_in": 100,
+        "amount": 120,
+        "profit": 20,
+        "money": 1.0
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 100,
+        "amount": 96,
+        "profit": -4,
+        "money": -0.2
+      },
+      {
+        "player": "Lewis",
+        "buy_in": 100,
+        "amount": 84,
+        "profit": -16,
+        "money": -0.8
       }
     ]
   }
