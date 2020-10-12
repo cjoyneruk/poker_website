@@ -5,24 +5,24 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 2200,
-        "amount": 3087,
-        "profit": 887,
-        "money": 44.35
+        "buy_in": 2400,
+        "amount": 3263,
+        "profit": 863,
+        "money": 43.15
       },
       {
         "player": "Kieran",
-        "buy_in": 2700,
-        "amount": 2795,
-        "profit": 95,
-        "money": 4.75
+        "buy_in": 2800,
+        "amount": 2960,
+        "profit": 160,
+        "money": 8.0
       },
       {
         "player": "Andy B",
-        "buy_in": 2750,
-        "amount": 2662,
-        "profit": -88,
-        "money": -4.4
+        "buy_in": 2850,
+        "amount": 2821,
+        "profit": -29,
+        "money": -1.45
       },
       {
         "player": "Amanda",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 3000,
+        "buy_in": 3100,
         "amount": 2381,
-        "profit": -619,
-        "money": -30.95
+        "profit": -719,
+        "money": -35.95
       }
     ]
   },
@@ -258,24 +258,31 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 100,
-        "amount": 120,
-        "profit": 20,
-        "money": 1.0
+        "buy_in": 200,
+        "amount": 285,
+        "profit": 85,
+        "money": 4.25
       },
       {
         "player": "Andy B",
-        "buy_in": 100,
-        "amount": 96,
-        "profit": -4,
-        "money": -0.2
+        "buy_in": 200,
+        "amount": 255,
+        "profit": 55,
+        "money": 2.75
+      },
+      {
+        "player": "Joyner",
+        "buy_in": 200,
+        "amount": 176,
+        "profit": -24,
+        "money": -1.2
       },
       {
         "player": "Lewis",
-        "buy_in": 100,
+        "buy_in": 200,
         "amount": 84,
-        "profit": -16,
-        "money": -0.8
+        "profit": -116,
+        "money": -5.8
       }
     ]
   }
