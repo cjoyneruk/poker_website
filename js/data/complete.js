@@ -922,5 +922,131 @@ var complete_data = [
     "buy_in": null,
     "amount": null,
     "profit": null
+  },
+  {
+    "game_id": 23,
+    "player": "Joyner",
+    "buy_in": 100.0,
+    "amount": 0.0,
+    "profit": -100.0
+  },
+  {
+    "game_id": 23,
+    "player": "Andy B",
+    "buy_in": 100.0,
+    "amount": 207.0,
+    "profit": 107.0
+  },
+  {
+    "game_id": 23,
+    "player": "Kieran",
+    "buy_in": 200.0,
+    "amount": 146.0,
+    "profit": -54.0
+  },
+  {
+    "game_id": 23,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 23,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 147.0,
+    "profit": 47.0
+  },
+  {
+    "game_id": 23,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 24,
+    "player": "Joyner",
+    "buy_in": 200.0,
+    "amount": 134.0,
+    "profit": -66.0
+  },
+  {
+    "game_id": 24,
+    "player": "Andy B",
+    "buy_in": 100.0,
+    "amount": 238.0,
+    "profit": 138.0
+  },
+  {
+    "game_id": 24,
+    "player": "Kieran",
+    "buy_in": 100.0,
+    "amount": 35.0,
+    "profit": -65.0
+  },
+  {
+    "game_id": 24,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 24,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 93.0,
+    "profit": -7.0
+  },
+  {
+    "game_id": 24,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 25,
+    "player": "Joyner",
+    "buy_in": 100.0,
+    "amount": 10.0,
+    "profit": -90.0
+  },
+  {
+    "game_id": 25,
+    "player": "Andy B",
+    "buy_in": 300.0,
+    "amount": 93.0,
+    "profit": -207.0
+  },
+  {
+    "game_id": 25,
+    "player": "Kieran",
+    "buy_in": 200.0,
+    "amount": 406.0,
+    "profit": 206.0
+  },
+  {
+    "game_id": 25,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 25,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 191.0,
+    "profit": 91.0
+  },
+  {
+    "game_id": 25,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
   }
 ]

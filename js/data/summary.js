@@ -5,24 +5,24 @@ var summary_data = [
     "data": [
       {
         "player": "Joyner",
-        "buy_in": 2400,
-        "amount": 3263,
-        "profit": 863,
-        "money": 43.15
+        "buy_in": 2800,
+        "amount": 3407,
+        "profit": 607,
+        "money": 30.35
       },
       {
         "player": "Kieran",
-        "buy_in": 2800,
-        "amount": 2960,
-        "profit": 160,
-        "money": 8.0
+        "buy_in": 3300,
+        "amount": 3547,
+        "profit": 247,
+        "money": 12.35
       },
       {
         "player": "Andy B",
-        "buy_in": 2850,
-        "amount": 2821,
-        "profit": -29,
-        "money": -1.45
+        "buy_in": 3350,
+        "amount": 3359,
+        "profit": 9,
+        "money": 0.45
       },
       {
         "player": "Amanda",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 3100,
-        "amount": 2381,
-        "profit": -719,
-        "money": -35.95
+        "buy_in": 3400,
+        "amount": 2812,
+        "profit": -588,
+        "money": -29.4
       }
     ]
   },
@@ -257,32 +257,66 @@ var summary_data = [
     "title": "Phase 6: Game 21 - Game 24",
     "data": [
       {
-        "player": "Kieran",
-        "buy_in": 200,
-        "amount": 285,
-        "profit": 85,
-        "money": 4.25
-      },
-      {
         "player": "Andy B",
-        "buy_in": 200,
-        "amount": 255,
-        "profit": 55,
-        "money": 2.75
+        "buy_in": 400,
+        "amount": 700,
+        "profit": 300,
+        "money": 15.0
       },
       {
-        "player": "Joyner",
-        "buy_in": 200,
-        "amount": 176,
-        "profit": -24,
-        "money": -1.2
+        "player": "Kieran",
+        "buy_in": 500,
+        "amount": 466,
+        "profit": -34,
+        "money": -1.7
       },
       {
         "player": "Lewis",
+        "buy_in": 400,
+        "amount": 324,
+        "profit": -76,
+        "money": -3.8
+      },
+      {
+        "player": "Joyner",
+        "buy_in": 500,
+        "amount": 310,
+        "profit": -190,
+        "money": -9.5
+      }
+    ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 7: Game 25 - Game 28",
+    "data": [
+      {
+        "player": "Kieran",
         "buy_in": 200,
-        "amount": 84,
-        "profit": -116,
-        "money": -5.8
+        "amount": 406,
+        "profit": 206,
+        "money": 10.3
+      },
+      {
+        "player": "Lewis",
+        "buy_in": 100,
+        "amount": 191,
+        "profit": 91,
+        "money": 4.55
+      },
+      {
+        "player": "Joyner",
+        "buy_in": 100,
+        "amount": 10,
+        "profit": -90,
+        "money": -4.5
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 300,
+        "amount": 93,
+        "profit": -207,
+        "money": -10.35
       }
     ]
   }
