@@ -4,25 +4,25 @@ var summary_data = [
     "title": "All games",
     "data": [
       {
-        "player": "Joyner",
-        "buy_in": 3000,
-        "amount": 3574,
-        "profit": 574,
-        "money": 28.7
+        "player": "Kieran",
+        "buy_in": 3800,
+        "amount": 4398,
+        "profit": 598,
+        "money": 29.9
       },
       {
-        "player": "Kieran",
-        "buy_in": 3400,
-        "amount": 3822,
-        "profit": 422,
-        "money": 21.1
+        "player": "Joyner",
+        "buy_in": 3300,
+        "amount": 3847,
+        "profit": 547,
+        "money": 27.35
       },
       {
         "player": "Andy B",
-        "buy_in": 3450,
-        "amount": 3441,
-        "profit": -9,
-        "money": -0.45
+        "buy_in": 3850,
+        "amount": 3774,
+        "profit": -76,
+        "money": -3.8
       },
       {
         "player": "Amanda",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 3600,
-        "amount": 2888,
-        "profit": -712,
-        "money": -35.6
+        "buy_in": 4000,
+        "amount": 3206,
+        "profit": -794,
+        "money": -39.7
       }
     ]
   },
@@ -292,31 +292,65 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 300,
-        "amount": 681,
-        "profit": 381,
-        "money": 19.05
+        "buy_in": 500,
+        "amount": 1008,
+        "profit": 508,
+        "money": 25.4
       },
       {
         "player": "Lewis",
-        "buy_in": 300,
-        "amount": 267,
-        "profit": -33,
-        "money": -1.65
+        "buy_in": 500,
+        "amount": 387,
+        "profit": -113,
+        "money": -5.65
       },
       {
         "player": "Joyner",
-        "buy_in": 300,
-        "amount": 177,
-        "profit": -123,
-        "money": -6.15
+        "buy_in": 500,
+        "amount": 349,
+        "profit": -151,
+        "money": -7.55
       },
       {
         "player": "Andy B",
-        "buy_in": 400,
-        "amount": 175,
-        "profit": -225,
-        "money": -11.25
+        "buy_in": 500,
+        "amount": 256,
+        "profit": -244,
+        "money": -12.2
+      }
+    ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 8: Game 29 - Game 32",
+    "data": [
+      {
+        "player": "Kieran",
+        "buy_in": 200,
+        "amount": 249,
+        "profit": 49,
+        "money": 2.45
+      },
+      {
+        "player": "Joyner",
+        "buy_in": 100,
+        "amount": 101,
+        "profit": 1,
+        "money": 0.05
+      },
+      {
+        "player": "Lewis",
+        "buy_in": 200,
+        "amount": 198,
+        "profit": -2,
+        "money": -0.1
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 300,
+        "amount": 252,
+        "profit": -48,
+        "money": -2.4
       }
     ]
   }

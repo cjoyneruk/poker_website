@@ -1090,5 +1090,173 @@ var complete_data = [
     "buy_in": null,
     "amount": null,
     "profit": null
+  },
+  {
+    "game_id": 27,
+    "player": "Joyner",
+    "buy_in": 100.0,
+    "amount": 54.0,
+    "profit": -46.0
+  },
+  {
+    "game_id": 27,
+    "player": "Andy B",
+    "buy_in": 100.0,
+    "amount": 81.0,
+    "profit": -19.0
+  },
+  {
+    "game_id": 27,
+    "player": "Kieran",
+    "buy_in": 100.0,
+    "amount": 145.0,
+    "profit": 45.0
+  },
+  {
+    "game_id": 27,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 27,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 120.0,
+    "profit": 20.0
+  },
+  {
+    "game_id": 27,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 28,
+    "player": "Joyner",
+    "buy_in": 100.0,
+    "amount": 118.0,
+    "profit": 18.0
+  },
+  {
+    "game_id": 28,
+    "player": "Andy B",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 28,
+    "player": "Kieran",
+    "buy_in": 100.0,
+    "amount": 182.0,
+    "profit": 82.0
+  },
+  {
+    "game_id": 28,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 28,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 0.0,
+    "profit": -100.0
+  },
+  {
+    "game_id": 28,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 29,
+    "player": "Joyner",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 29,
+    "player": "Andy B",
+    "buy_in": 200.0,
+    "amount": 130.0,
+    "profit": -70.0
+  },
+  {
+    "game_id": 29,
+    "player": "Kieran",
+    "buy_in": 100.0,
+    "amount": 148.0,
+    "profit": 48.0
+  },
+  {
+    "game_id": 29,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 29,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 122.0,
+    "profit": 22.0
+  },
+  {
+    "game_id": 29,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 30,
+    "player": "Joyner",
+    "buy_in": 100.0,
+    "amount": 101.0,
+    "profit": 1.0
+  },
+  {
+    "game_id": 30,
+    "player": "Andy B",
+    "buy_in": 100.0,
+    "amount": 122.0,
+    "profit": 22.0
+  },
+  {
+    "game_id": 30,
+    "player": "Kieran",
+    "buy_in": 100.0,
+    "amount": 101.0,
+    "profit": 1.0
+  },
+  {
+    "game_id": 30,
+    "player": "IanB",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
+  },
+  {
+    "game_id": 30,
+    "player": "Lewis",
+    "buy_in": 100.0,
+    "amount": 76.0,
+    "profit": -24.0
+  },
+  {
+    "game_id": 30,
+    "player": "Amanda",
+    "buy_in": null,
+    "amount": null,
+    "profit": null
   }
 ]
