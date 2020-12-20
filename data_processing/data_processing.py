@@ -61,9 +61,6 @@ for i in range(0, a):
 	print(i)
 	df_summary = create_summary(df, range(4*i + 1, (i + 1) * 4+1))
 	title = f'Phase {i+1}: Game {i * 4+1} - Game {(i + 1) * 4}'
-	# else:
-	# 	df_summary = create_summary(df, range(4*i + 1, 4*i + b + 1))
-	# 	title = f'Phase {i+1}: Game {i * 4 + 1} - Game {4*i + b}'
 
 	summary_data.append({
 		'type': 'phase',

@@ -5,24 +5,17 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 3800,
-        "amount": 4398,
-        "profit": 598,
-        "money": 29.9
+        "buy_in": 3900,
+        "amount": 4556,
+        "profit": 656,
+        "money": 32.8
       },
       {
         "player": "Joyner",
-        "buy_in": 3300,
-        "amount": 3847,
-        "profit": 547,
-        "money": 27.35
-      },
-      {
-        "player": "Andy B",
-        "buy_in": 3850,
-        "amount": 3774,
-        "profit": -76,
-        "money": -3.8
+        "buy_in": 3400,
+        "amount": 3982,
+        "profit": 582,
+        "money": 29.1
       },
       {
         "player": "Amanda",
@@ -32,18 +25,25 @@ var summary_data = [
         "money": -5.0
       },
       {
+        "player": "Andy B",
+        "buy_in": 3950,
+        "amount": 3846,
+        "profit": -104,
+        "money": -5.2
+      },
+      {
         "player": "IanB",
-        "buy_in": 800,
-        "amount": 622,
-        "profit": -178,
-        "money": -8.9
+        "buy_in": 900,
+        "amount": 712,
+        "profit": -188,
+        "money": -9.4
       },
       {
         "player": "Lewis",
-        "buy_in": 4000,
-        "amount": 3206,
-        "profit": -794,
-        "money": -39.7
+        "buy_in": 4100,
+        "amount": 3341,
+        "profit": -759,
+        "money": -37.95
       }
     ]
   },
@@ -326,31 +326,38 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 200,
-        "amount": 249,
-        "profit": 49,
-        "money": 2.45
+        "buy_in": 300,
+        "amount": 407,
+        "profit": 107,
+        "money": 5.35
       },
       {
         "player": "Joyner",
-        "buy_in": 100,
-        "amount": 101,
-        "profit": 1,
-        "money": 0.05
+        "buy_in": 200,
+        "amount": 236,
+        "profit": 36,
+        "money": 1.8
       },
       {
         "player": "Lewis",
-        "buy_in": 200,
-        "amount": 198,
-        "profit": -2,
-        "money": -0.1
+        "buy_in": 300,
+        "amount": 333,
+        "profit": 33,
+        "money": 1.65
+      },
+      {
+        "player": "IanB",
+        "buy_in": 100,
+        "amount": 90,
+        "profit": -10,
+        "money": -0.5
       },
       {
         "player": "Andy B",
-        "buy_in": 300,
-        "amount": 252,
-        "profit": -48,
-        "money": -2.4
+        "buy_in": 400,
+        "amount": 324,
+        "profit": -76,
+        "money": -3.8
       }
     ]
   }
