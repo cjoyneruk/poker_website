@@ -34,9 +34,9 @@ var summary_data = [
       {
         "player": "IanB",
         "buy_in": 900,
-        "amount": 712,
-        "profit": -188,
-        "money": -9.4
+        "amount": 622,
+        "profit": -278,
+        "money": -13.9
       },
       {
         "player": "Lewis",
@@ -339,18 +339,18 @@ var summary_data = [
         "money": 5.4
       },
       {
-        "player": "IanB",
-        "buy_in": 100,
-        "amount": 90,
-        "profit": -10,
-        "money": -0.5
-      },
-      {
         "player": "Andy B",
         "buy_in": 600,
         "amount": 505,
         "profit": -95,
         "money": -4.75
+      },
+      {
+        "player": "IanB",
+        "buy_in": 100,
+        "amount": 0,
+        "profit": -100,
+        "money": -5.0
       },
       {
         "player": "Joyner",

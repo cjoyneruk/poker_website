@@ -1284,8 +1284,8 @@ var complete_data = [
     "game_id": 31,
     "player": "IanB",
     "buy_in": 100.0,
-    "amount": 90.0,
-    "profit": -10.0
+    "amount": 0.0,
+    "profit": -100.0
   },
   {
     "game_id": 31,
