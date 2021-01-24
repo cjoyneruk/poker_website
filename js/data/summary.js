@@ -5,17 +5,17 @@ var summary_data = [
     "data": [
       {
         "player": "Kieran",
-        "buy_in": 4100,
-        "amount": 4900,
-        "profit": 800,
-        "money": 40.0
+        "buy_in": 4400,
+        "amount": 5037,
+        "profit": 637,
+        "money": 31.85
       },
       {
         "player": "Joyner",
-        "buy_in": 3600,
-        "amount": 3982,
-        "profit": 382,
-        "money": 19.1
+        "buy_in": 3700,
+        "amount": 4173,
+        "profit": 473,
+        "money": 23.65
       },
       {
         "player": "Amanda",
@@ -26,10 +26,10 @@ var summary_data = [
       },
       {
         "player": "Andy B",
-        "buy_in": 4150,
-        "amount": 4027,
-        "profit": -123,
-        "money": -6.15
+        "buy_in": 4450,
+        "amount": 4263,
+        "profit": -187,
+        "money": -9.35
       },
       {
         "player": "IanB",
@@ -40,10 +40,10 @@ var summary_data = [
       },
       {
         "player": "Lewis",
-        "buy_in": 4300,
-        "amount": 3616,
-        "profit": -684,
-        "money": -34.2
+        "buy_in": 4500,
+        "amount": 3952,
+        "profit": -548,
+        "money": -27.4
       }
     ]
   },
@@ -358,6 +358,40 @@ var summary_data = [
         "amount": 236,
         "profit": -164,
         "money": -8.2
+      }
+    ]
+  },
+  {
+    "type": "phase",
+    "title": "Phase 9: Game 33 - Game 36",
+    "data": [
+      {
+        "player": "Lewis",
+        "buy_in": 200,
+        "amount": 336,
+        "profit": 136,
+        "money": 6.8
+      },
+      {
+        "player": "Joyner",
+        "buy_in": 100,
+        "amount": 191,
+        "profit": 91,
+        "money": 4.55
+      },
+      {
+        "player": "Andy B",
+        "buy_in": 300,
+        "amount": 236,
+        "profit": -64,
+        "money": -3.2
+      },
+      {
+        "player": "Kieran",
+        "buy_in": 300,
+        "amount": 137,
+        "profit": -163,
+        "money": -8.15
       }
     ]
   }
